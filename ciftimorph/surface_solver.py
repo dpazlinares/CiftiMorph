@@ -164,9 +164,9 @@ class SurfaceSolver:
         fig2.suptitle('Eigenfunctions of the Laplace Beltrami operator')
         ## iterate for eigenfunctions
         start = 1
-        end = 10
+        end = 32
         for e in range(start, end + 1):
-            ax = pyplot.subplot(2, 5, e, projection='3d')
+            ax = pyplot.subplot(4, 8, e, projection='3d')
             title = 'efunc' + str(e) + '(' + str(self.ciftimorph.data.eval[e]) + ')'
             plot_surf_stat_map(
                 self.geometry.metadata.path, 
